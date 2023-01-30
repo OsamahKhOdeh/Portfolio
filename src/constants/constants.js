@@ -5,7 +5,7 @@ export const projects = [
     title: "Memories App",
     description:
       "Memories App is a social media application , built with MERN stack , in this app you can share your favorite places you visited with others , you can like ,edit , delete your memories . the app is fully responsive and uses mongoDB for storing the data , React for the frontend , and Node with express for the backend , we used Redux , google OAuth and JWT . ",
-    image: "/images/memories.png",
+    image: "https://res.cloudinary.com/dwen6dx2a/image/upload/v1675088416/memories_rawjcz.png",
     tags: ["React", "Nodejs", "MongoDB", "Express", "Redux", "OAuth2", "JWT"],
     visit: "https://github.com/OsamahKhOdeh/MemoriesMernApp",
     source: "https://memories-mern-app-osama.vercel.app",
@@ -14,7 +14,7 @@ export const projects = [
   {
     title: "Ecommerce",
     description: "A simple and beautiful ecommerce web app built with React (Nextjs) for the front-end and i used Sanity CMS for managing the backend",
-    image: "/images/nextjs-sanity.png",
+    image: "https://res.cloudinary.com/dwen6dx2a/image/upload/v1675088442/nextjs-sanity_th2xgj.png",
     tags: ["React", "NextJS", "Sanity", "Material-UI", "Context API"],
     visit: "https://github.com/OsamahKhOdeh/ecommerce_sanity-stripe",
     source: "https://nextjs-sanity-store.vercel.app/",
@@ -23,7 +23,7 @@ export const projects = [
   {
     title: "Online Clothing Store ",
     description: "Developed an eCommerce application using MERN stack that allows users to buy cloths , Developed an Admin dashboard that allows the owner of the app to control the products , users and provide the admin with Analytics and Reports ",
-    image: "/images/clothing.png",
+    image: "https://res.cloudinary.com/dwen6dx2a/image/upload/v1675088467/clothing_msttxi.png",
     tags: ["React", "Nodejs", "MongoDB", "Redux", "Firebase", "Style-components"],
     source: "https://github.com/OsamahKhOdeh/Clothing_Shop_MERN ",
     visit: "https://clothing-shop-mern.vercel.app",
@@ -32,7 +32,7 @@ export const projects = [
   {
     title: "Food Ordering App",
     description: "Developed using nextjs and mongoDB ,The app allow the user to choose any kind of piazza then choose the size , add to cart , then pay with paypal or cach ,created admin dashboard to get orders and change there status , also add and edit the restaurant products",
-    image: "/images/foodOredering.jpg",
+    image: "https://res.cloudinary.com/dwen6dx2a/image/upload/v1675088485/foodOredering_dna5xs.jpg",
     tags: ["Nextjs", "Cloudinary", "MongoDB", "PatPal", "React"],
     source: "https://google.com",
     visit: "https://google.com",
