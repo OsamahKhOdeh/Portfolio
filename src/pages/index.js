@@ -8,25 +8,23 @@ import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Skills from "../components/Skills/Skills";
+import NavDropDown from "../components/NavDropDown";
 
 const Home = () => {
   return (
     <Layout>
+      <NavDropDown>KKK</NavDropDown>
       <Section grid>
         <Hero />
         <BgAnimation />
       </Section>
       <Section>
         <About />
-      </Section>
-      <Section>
         <Skills />
       </Section>
-
       <Timeline />
       <Projects />
       <Technologies />
-      <Acomplishments />
     </Layout>
   );
 };

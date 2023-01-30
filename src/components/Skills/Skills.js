@@ -5,7 +5,11 @@ import { LeftSection, Boxes, Box, BoxNum, BoxText } from "./SkillsStyles";
 import { Chip } from "@mui/material";
 import { DiReact, DiAndroid, DiBootstrap, DiNodejs, DiGit, DiJavascript, DiJava, DiMongodb, DiHtml5, DiCss3, DiPython } from "react-icons/di";
 import { AiFillAndroid } from "react-icons/ai";
+import { MySkills } from "../../constants/constants";
+console.log(MySkills[0]);
 // <Button onClick={props.handleClick}>Learn More</Button>;
+
+const Reacto = "DiReact";
 
 const Skills = (props) => (
   <>
@@ -16,42 +20,14 @@ const Skills = (props) => (
         </SectionTitle>
         <SectionText>
           <Boxes>
-            <Box key={1}>
-              <BoxNum>React</BoxNum>
-              <BoxText>
-                <DiReact />
-              </BoxText>
-            </Box>
-            <Box key={1}>
-              <BoxNum>Nodejs</BoxNum>
-              <BoxText>
-                <DiNodejs />
-              </BoxText>
-            </Box>
-            <Box key={1}>
-              <BoxNum>Express</BoxNum>
-              <BoxText>
-                <DiJavascript />
-              </BoxText>
-            </Box>
-            <Box key={1}>
-              <BoxNum>MongoDB</BoxNum>
-              <BoxText>
-                <DiMongodb />
-              </BoxText>
-            </Box>
-            <Box key={1}>
-              <BoxNum>JavaScript</BoxNum>
-              <BoxText>
-                <DiJavascript />
-              </BoxText>
-            </Box>
-            <Box key={1}>
-              <BoxNum>React</BoxNum>
-              <BoxText>
-                <DiReact />
-              </BoxText>
-            </Box>
+            {MySkills.map((s, i) => {
+              return (
+                <Box key={i}>
+                  <BoxNum>{MySkills[i].text}</BoxNum>
+                  <BoxText>{MySkills[i].icon}</BoxText>
+                </Box>
+              );
+            })}
           </Boxes>
         </SectionText>
       </LeftSection>

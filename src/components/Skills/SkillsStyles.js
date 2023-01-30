@@ -26,39 +26,38 @@ export const Boxes = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
-  padding: 0 0 0 0;
 
   @media ${(props) => props.theme.breakpoints.md} {
     gap: 16px;
     margin: 20px 0 32px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
     gap: 10px;
-    max-width: 500px;
-    margin: 24px auto;
+    //* max-width: 500px;
+    //*margin: 24px auto;
   }
 `;
 
 export const Box = styled.div`
-  background: #212d45;
-  border-radius: 25px;
+  background: #2f70e0;
+  border-radius: 20px;
   //* height: 144px;
   padding: 5px;
   @media ${(props) => props.theme.breakpoints.lg} {
-    height: 210px;
+    height: 100px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 135px;
-    padding: 16px;
+    height: 65px;
+    padding: 10px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 110px;
+    height: 50px;
     padding: 12px;
 
     &:nth-child(2n) {
@@ -73,15 +72,15 @@ export const BoxNum = styled.h5`
   font-size: 26px;
   line-height: 40px;
   letter-spacing: 0.01em;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 0px;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 32px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 26px;
   }
 `;
@@ -95,14 +94,16 @@ export const BoxText = styled.p`
   line-height: 24px;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 
   @media ${(props) => props.theme.breakpoints.md} {
+    visibility: hidden;
     font-size: 16px;
     line-height: 20px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    visibility: hidden;
     font-size: 10px;
     line-height: 14px;
   }
