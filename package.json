@@ -18,5 +18,9 @@
     "react-icons": "^4.2.0",
     "styled-components": "^5.3.6",
     "styled-normalize": "^8.0.7"
-  }
+  },
+  "engines": {
+  "node": "16.x"
+}
+  
 }
